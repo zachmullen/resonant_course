@@ -37,4 +37,5 @@ In this task, we'll create a simplistic algorithm for segmentation of bones from
    
 ### Example solution
 
-TODO
+[Example in jupyter notebook](https://github.com/zachmullen/ct_bone_segmentation/blob/master/Bone%20segmentation%20example.ipynb) - 
+If you upload this notebook to https://jupyterhub.med.utah.edu, it should work.
