@@ -62,7 +62,7 @@ For the next step, we'll take your algorithm and turn it into a command-line int
 1. Once the build is done, you should be able to pull and run the image locally using your own docker engine. Substitute the name of
    your own image into the command below:
 
-   ```bash
+   ```
    $ docker run zachmullen/ct_bone_segmentation
    Unable to find image 'zachmullen/ct_bone_segmentation:latest' locally
    latest: Pulling from zachmullen/ct_bone_segmentation
@@ -88,10 +88,12 @@ For the next step, we'll take your algorithm and turn it into a command-line int
    [mount a volume](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume)
    when we run the container:
    
-   ```bash
+   ```
    docker run -v ~/Downloads:/data zachmullen/ct_bone_segmentation --input /data/head_ct_small.nii.gz --output /data/head_ct_segmented.nii.gz
    ```
    
    *Note: in the above example, ~/Downloads is where we assumed our head_ct_small.nii.gz file lived. If it's somewhere else on
    your host, change the command accordingly*
+   
+   If all goes well, the `head_ct_segmented.nii.gz` file should be written in the same directory as the input file.
    
