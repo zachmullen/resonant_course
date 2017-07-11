@@ -96,4 +96,12 @@ For the next step, we'll take your algorithm and turn it into a command-line int
    your host, change the command accordingly*
    
    If all goes well, the `head_ct_segmented.nii.gz` file should be written in the same directory as the input file.
+
+1. Un-hardcode the threshold value and closing structuring element radius from your program, and make it accept those values
+   as other command line arguments called `--threshold` and `--closing-radius` of type integer. Commit that change and push,
+   which will trigger another automated build of your image on Docker Hub.
+   
+### Example solutions
+
+[CLI script](https://github.com/zachmullen/ct_bone_segmentation/blob/master/bone_seg.py)
    
