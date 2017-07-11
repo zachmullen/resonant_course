@@ -1,7 +1,8 @@
 ## Medical image segmentation: algorithm prototyping phase
 
 In this task, we'll create a simplistic algorithm for segmentation of bones from a CT image.
-
+1. If you're more comfortable using jupyter notebooks rather than raw python scripts, feel free to do your prototyping there first, and
+   then copy the relevant code into a script afterward.
 1. Download [this sample input image](http://34.229.214.79/#item/5963f36c4d2d8d07eb720b09) from our Girder instance to your local
    machine. This is a CT image of a head taken without contrast agent; it's a 3-dimensional image where each pixel is a single
    channel, 16-bit integral value that is the [radiodensity](https://en.wikipedia.org/wiki/Radiodensity) at that point, measured in
