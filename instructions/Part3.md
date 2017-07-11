@@ -41,7 +41,7 @@ For the next step, we'll take your algorithm and turn it into a command-line int
    COPY bone_seg.py /bone_seg.py
 
    # Make our script the executable that will be run via "docker run"
-   ENTRYPOINT python /bone_seg.py
+   ENTRYPOINT ["python", "/bone_seg.py"]
    ```
 
    Note that you should change the script name to whatever you named your python file. The lines that start with `#` are just comments,
