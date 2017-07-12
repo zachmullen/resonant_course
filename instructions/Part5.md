@@ -19,15 +19,30 @@ each such pixel.
 1. Repeat the steps from the previous task to turn your script into a command-line interface that can be called with two arguments,
    `--test` and `--truth`, both of which are paths to image files.
    
-   `python compare_images.py --test path_to_test_image.nii.gz --truth ./segmentation_ground_truth.nii.gz`
+   ```bash
+   python compare_images.py --test path_to_test_image.nii.gz --truth ./segmentation_ground_truth.nii.gz
+   ```
    
    To sanity check your algorithm, point the test and truth arguments to the same file; you should get an output value of `1`,
    indicating the images are identical.
 
+1. Change the algorithm so that instead of just printing the value, it prints a JSON Object that looks like:
+
+   ```json
+   {
+     "Jaccard": 0.94
+   }
+   ```
+   
+   This can be done by creating a python dictionary and using `json.dumps` to turn the dictionary into a JSON string that
+   can be printed to standard output.
+
 1. Repeat the steps from the previous task to wrap your task inside a Docker image. Create a new repository and new automated
    build of it in Docker Hub. Once it's been built on Docker Hub, you should be able to run something that looks like:
    
-   `docker run -v .:/data zachmullen/compare_images --test /data/test_image.nii.gz --truth /data/segmentation_ground_truth.nii.gz`
+   ```bash
+   docker run -v .:/data zachmullen/compare_images --test /data/test_image.nii.gz --truth /data/segmentation_ground_truth.nii.gz
+   ```
 
 1. Create another Task item under the Tasks folder you created in Part 1. Add the `isItemTask: true` metadata field and a second
   `itemTaskSpec` JSON field that will look like the following, but with your own docker image name substituted:
