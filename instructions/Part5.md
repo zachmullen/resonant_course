@@ -74,6 +74,12 @@ each such pixel.
         "type": "file"
       }
     ],
+    "outputs": {
+      "id": "_stdout",
+      "input_id": "TestImage",
+      "target": "memory",
+      "type": "input-item-metadata"
+    }
     "mode": "docker"
    }
    ```
