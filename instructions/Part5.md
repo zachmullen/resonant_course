@@ -51,6 +51,7 @@ each such pixel.
   
    ```json
    {
+    "mode": "docker",
     "docker_image": "zachmullen/compare_images",
     "container_args": [
       "--test",
@@ -80,7 +81,6 @@ each such pixel.
       "target": "memory",
       "type": "input-item-metadata"
     }
-    "mode": "docker"
    }
    ```
    
