@@ -1,6 +1,9 @@
 This is a collection of links to documents relevant to the course. Reading these documents should allow
 someone to understand the course material even if they were not present for the course.
 
+The shared Girder instance being used for the course is [here](http://34.229.214.79/). This instance will only exist for the duration
+of the course, and is intended solely for use as part of the course.
+
 ## MongoDB
 
 * [MongoDB official manual](https://docs.mongodb.com/manual/)
