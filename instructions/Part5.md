@@ -37,8 +37,10 @@ each such pixel.
    This can be done by creating a python dictionary and using `json.dumps` to turn the dictionary into a JSON string that
    can be printed to standard output.
 
-1. Repeat the steps from the previous task to wrap your task inside a Docker image. Create a new repository and new automated
-   build of it in Docker Hub. Once it's been built on Docker Hub, you should be able to run something that looks like:
+1. Repeat the steps from the previous task to wrap your task inside a Docker image. This time for the Dockerfile, let's use the
+   base image `FROM zachmullen/resonant_course`, which already has the pip dependencies installed, so you can skip that `RUN`
+   step. Create a new repository and new automated build of it in Docker Hub. Once it's been built on Docker Hub, you should
+   be able to run something that looks like:
    
    ```bash
    docker run -v .:/data zachmullen/compare_images --test /data/test_image.nii.gz --truth /data/segmentation_ground_truth.nii.gz
