@@ -88,6 +88,6 @@ each such pixel.
 
 ### Example solutions
 
-[Jupyter notebook solution](https://github.com/zachmullen/image_comparison/blob/master/Image%20similarity.ipynb)
-[CLI solution](https://github.com/zachmullen/image_comparison/blob/master/compare_images.py)
+* [Jupyter notebook solution](https://github.com/zachmullen/image_comparison/blob/master/Image%20similarity.ipynb)
+* [CLI solution](https://github.com/zachmullen/image_comparison/blob/master/compare_images.py)
 
