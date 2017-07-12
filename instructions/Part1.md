@@ -1,3 +1,5 @@
+## Getting set up in Girder
+
 1. If you do not already have a user on github, create one.
 1. Log into the [DeCART Girder instance](http://34.229.214.79//) by clicking the Login link in the upper right,
    and then clicking the button to log in with Github. You must authorize the application to read your user info.
