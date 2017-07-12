@@ -8,7 +8,7 @@ This is the final step of our pipeline, where we expose our algorithm for use wi
 
    `isItemTask: true`
    
-   This field is used in a [MongoDB index](https://docs.mongodb.com/manual/indexes/) on the server so that we can quickly query
+   This field is used in a [MongoDB index](https://docs.mongodb.com/manual/indexes/) on the server so that we can quickly query (in O(log n))
    to find all of the Tasks available in the system. This is a good example of leveraging the flexibility of a schemaless/document-oriented DBMS.
    
 1. Add a *JSON* metadata field with the key ``itemTaskSpec``. For the value, set the editor into **Code** mode, and copy the following
