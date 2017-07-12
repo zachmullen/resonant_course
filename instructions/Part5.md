@@ -83,4 +83,11 @@ each such pixel.
     }
    }
    ```
-   
+
+1. OPTIONAL - For extra credit, implement the similar, but slightly different [Sørensen–Dice coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) and have it output as another field in the JSON output.
+
+### Example solutions
+
+[Jupyter notebook solution](https://github.com/zachmullen/image_comparison/blob/master/Image%20similarity.ipynb)
+[CLI solution](https://github.com/zachmullen/image_comparison/blob/master/compare_images.py)
+
