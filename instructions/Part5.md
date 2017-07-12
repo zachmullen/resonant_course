@@ -38,7 +38,7 @@ each such pixel.
    can be printed to standard output.
 
 1. Repeat the steps from the previous task to wrap your task inside a Docker image. This time for the Dockerfile, let's use the
-   base image `FROM zachmullen/resonant_course`, which already has the pip dependencies installed, so you can skip that `RUN`
+   base image `FROM zachmullen/resonant_course:latest`, which already has the pip dependencies installed, so you can skip that `RUN`
    step. Create a new repository and new automated build of it in Docker Hub. Once it's been built on Docker Hub, you should
    be able to run something that looks like:
    
@@ -49,5 +49,32 @@ each such pixel.
 1. Create another Task item under the Tasks folder you created in Part 1. Add the `isItemTask: true` metadata field and a second
   `itemTaskSpec` JSON field that will look like the following, but with your own docker image name substituted:
   
-  TODO
+   ```json
+   {
+    "docker_image": "zachmullen/compare_images",
+    "container_args": [
+      "--test",
+      "$input{TestImage}",
+      "--truth",
+      "$input{TruthImage}"
+    ],
+    "inputs": [
+      {
+        "description": "The image to compare against the ground truth",
+        "id": "TestImage",
+        "name": "Test image",
+        "target": "filepath",
+        "type": "file"
+      },
+      {
+        "description": "The ground truth image to compare against",
+        "id": "TruthImage",
+        "name": "Truth image",
+        "target": "filepath",
+        "type": "file"
+      }
+    ],
+    "mode": "docker"
+   }
+   ```
    
