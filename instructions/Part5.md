@@ -75,12 +75,12 @@ each such pixel.
         "type": "file"
       }
     ],
-    "outputs": {
+    "outputs": [{
       "id": "_stdout",
       "input_id": "TestImage",
       "target": "memory",
       "type": "input-item-metadata"
-    }
+    }]
    }
    ```
 
