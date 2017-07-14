@@ -21,3 +21,4 @@ of the course, and is intended solely for use as part of the course.
 * [Girder main page and full documentation](http://girder.readthedocs.io/en/latest/)
 * [Brief overview of the "item tasks" plugin](http://girder.readthedocs.io/en/latest/plugins.html#item-tasks)
 * [Girder worker documentation](http://girder-worker.readthedocs.io/en/latest/) Full disclosure: these docs are somewhat outdated and are going to be overhauled soon. They may not be very useful in the current state.
+* [Candela visualization toolkit](http://candela.readthedocs.io/en/latest/)
