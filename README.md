@@ -1,2 +1,3 @@
 # resonant_course
-Decart Resonant course documents
+
+Resonant course documents
