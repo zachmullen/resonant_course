@@ -1,8 +1,11 @@
 This is a collection of links to documents relevant to the course. Reading these documents should allow
 someone to understand the course material even if they were not present for the course.
 
-The shared Girder instance being used for the course is [here](http://34.229.214.79/). This instance will only exist for the duration
-of the course, and is intended solely for use as part of the course.
+The shared Girder instance being used for the course is [here](https://resonant-demo.kitware.com). This instance is not permanent, and may be spun down after the course is over.
+
+[Jupyter hub for the course](https://ec2-34-229-251-200.compute-1.amazonaws.com:8000) - We used a self-signed SSL certificate, so you'll need to circumvent your browser's security warnings.
+
+
 
 ## MongoDB
 
